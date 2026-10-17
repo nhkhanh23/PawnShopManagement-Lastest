@@ -1,0 +1,11 @@
+PASS dotnet restore preserves project path with spaces
+PASS dotnet build receives configuration and no-restore
+PASS database initialization uses a trailing flag after content root
+PASS dotnet failure stops startup
+PASS finds normal project layout
+PASS finds adjacent project layout
+PASS finds nested project layout
+PASS missing source rejected clearly
+PASS ambiguous nested source rejected
+PASS busy default port selects another local port
+All 10 launcher checks passed (database and browser not invoked).

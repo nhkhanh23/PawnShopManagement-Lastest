@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><PawnProject Condition="'$(PawnProject)' == ''">../PawnShopManagement/PawnShopManagement.csproj</PawnProject></PropertyGroup>
+ <ItemGroup><ProjectReference Include="$(PawnProject)" Aliases="global,pawn"/><PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.13"/><PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.13"/></ItemGroup>
+</Project>
+

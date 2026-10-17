@@ -1,0 +1,67 @@
+PASS Fresh installation opens admin setup
+PASS Existing installation opens login
+PASS Launcher readiness endpoint identifies running instance
+PASS Development missing connection uses LocalDB fallback
+PASS Development blank connection uses named demo database
+PASS Explicit SQL connection is preserved
+PASS Production requires explicit SQL connection
+PASS English sign-in labels localized
+PASS Anonymous MVC redirects to login
+PASS Anonymous API returns 401
+PASS CSRF rejects POST without token
+PASS CSS served
+PASS Login staff
+PASS English contract list localized
+PASS English model display labels localized
+PASS Staff cannot create staff accounts
+PASS Contract view renders seeded records
+PASS API filters and clamps paging
+PASS API second page contains two records
+PASS AJAX returns result fragment
+PASS Create customer
+PASS Duplicate CCCD returns form
+PASS Create contract under vi-VN
+PASS Decimal point stored correctly
+PASS Edit contract
+PASS Staff API delete forbidden
+PASS Invalid contract returns validation form
+PASS Invalid create did not persist
+PASS Login admin
+PASS REST POST returns 201 and Location
+PASS REST PUT returns 204
+PASS REST DELETE returns 204
+PASS Deleted contract returns 404
+PASS Delete referenced customer redirects safely
+PASS Referenced customer remains intact
+PASS Language endpoint prevents external redirect
+PASS Logout clears authentication
+PASS Account lockout persists across fresh sessions
+PASS Locked account cannot authenticate with correct password
+PASS Pawn term adds calendar days across leap February
+PASS Pawn due date crosses year boundary
+PASS Deadline state: Deadline overdue
+PASS Deadline state: Deadline today
+PASS Deadline state: Deadline tomorrow
+PASS Deadline state: Deadline three
+PASS Deadline state: Deadline four
+PASS Deadline state: Deadline redeemed
+PASS Deadline state: Deadline liquidated
+PASS Deadline state: Deadline legacy
+PASS API deadline filter Overdue
+PASS API deadline filter DueToday
+PASS API deadline filter DueSoon
+PASS AJAX includes alerts and preserves deadline filter in paging links
+PASS MVC accepts explicit 45-day pawn term
+PASS MVC persists pawn term and calculates due date
+PASS MVC edits pawn term
+PASS API exposes updated pawn term and due date
+PASS MVC rejects invalid pawn term: 0
+PASS MVC rejects invalid pawn term: 3651
+PASS MVC rejects invalid pawn term: 
+PASS Invalid pawn terms do not persist
+PASS API rejects zero-day pawn term
+PASS Deadline filter preserved on actual next-page link
+PASS Deadline filter works on page two
+PASS SQL Server translates deadline filter: Overdue
+PASS SQL Server translates deadline filter: DueToday
+PASS SQL Server translates deadline filter: DueSoon
